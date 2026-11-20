@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f0e9">
+  <meta name="description" content="Find the RAWAN bag that feels like you. A little quiz, a little story, and a bag made to carry more than your things.">
+  <title>Find Your Bag — RAWAN</title>
+  <style>
+    :root{--ink:#302523;--muted:#756866;--cream:#f6f0e9;--paper:#fffdf9;--rose:#d9a89f;--wine:#783e49;--line:#e7dcd4;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.55}button{font:inherit}a{color:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.eyebrow{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--wine);font-weight:700}.topbar{padding:24px 0;border-bottom:1px solid var(--line)}.nav{display:flex;justify-content:space-between;align-items:center}.brand{font-family:var(--serif);font-size:1.45rem;letter-spacing:.18em;text-decoration:none}.nav a:last-child{font-size:.82rem;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:3px}.hero{padding:90px 0 84px;text-align:center}.hero h1{font:clamp(3rem,8vw,6.6rem)/.98 var(--serif);font-weight:400;letter-spacing:-.055em;max-width:900px;margin:18px auto}.hero p{max-width:540px;margin:24px auto;color:var(--muted);font-size:1.05rem}.button{border:0;border-radius:999px;background:var(--wine);color:white;padding:15px 25px;cursor:pointer;font-weight:700;transition:transform .2s,background .2s}.button:hover{background:#5f303a;transform:translateY(-2px)}.hero .button{margin-top:12px}.note{font-size:.78rem!important;margin-top:12px!important}.quiz-section{padding:10px 0 100px}.quiz-card{max-width:760px;margin:auto;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:clamp(24px,6vw,58px);box-shadow:0 16px 55px #4e28200b}.quiz-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:32px}.progress-track{height:3px;background:var(--line);margin:0 0 34px}.progress{height:100%;width:0;background:var(--wine);transition:width .35s}.question-count{font-size:.78rem;color:var(--muted)}.quiz-card h2{font:clamp(1.9rem,4vw,2.7rem)/1.12 var(--serif);font-weight:400;margin:0 0 10px}.quiz-card .sub{color:var(--muted);margin:0 0 25px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:12px}.answer{background:transparent;text-align:left;border:1px solid var(--line);border-radius:5px;padding:17px 18px;color:var(--ink);cursor:pointer;transition:.2s}.answer:hover,.answer:focus-visible{border-color:var(--wine);background:#f9f1ee;outline:none}.answer strong{display:block;font:1.1rem var(--serif);font-weight:400;margin-bottom:4px}.answer span{font-size:.84rem;color:var(--muted)}.result{display:none;text-align:center}.result .result-icon{font-size:2.4rem;margin-bottom:12px}.result h2{font-size:clamp(2.5rem,6vw,4rem)}.result p{max-width:500px;margin:14px auto;color:var(--muted)}.result .button{margin-top:18px}.restart{display:block;margin:18px auto 0;border:0;background:none;text-decoration:underline;color:var(--muted);cursor:pointer}.story{background:#efe3dc;padding:100px 0}.story-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(32px,8vw,100px)}.photo-frame{min-height:440px;background:linear-gradient(145deg,#dbc2b8,#c8948c 55%,#a96469);display:grid;place-items:center;position:relative;overflow:hidden}.photo-frame img{width:100%;height:100%;min-height:440px;object-fit:cover;position:absolute;inset:0}.photo-placeholder{position:relative;text-align:center;padding:30px;color:#fff;z-index:1}.photo-placeholder .monogram{font:5rem var(--serif);opacity:.85}.photo-placeholder p{max-width:250px;font-size:.9rem}.photo-frame.has-photo .photo-placeholder{display:none}.story h2{font:clamp(2.6rem,5vw,4.4rem)/1.02 var(--serif);font-weight:400;letter-spacing:-.04em;margin:15px 0 22px}.story-copy{color:#62514d}.quote{font:1.35rem/1.5 var(--serif);color:var(--wine);margin:26px 0}.founder-label{font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--wine);font-weight:700}.purpose{padding:85px 0;text-align:center}.purpose blockquote{font:clamp(2rem,4.5vw,3.8rem)/1.15 var(--serif);max-width:850px;margin:20px auto}.purpose p{max-width:580px;margin:20px auto;color:var(--muted)}footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:.8rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:680px){.hero{padding:65px 0}.answers{grid-template-columns:1fr}.story-grid{grid-template-columns:1fr}.photo-frame,.photo-frame img{min-height:340px}.story{padding:70px 0}.purpose{padding:65px 0}.quiz-section{padding-bottom:70px}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="wrap nav"><a class="brand" href="#top" aria-label="RAWAN home">RAWAN</a><a href="#story">Our story</a></div></header>
+  <main id="top">
+    <section class="hero wrap">
+      <span class="eyebrow">A bag should feel like you</span>
+      <h1>Find the bag<br>that feels like <em>you.</em></h1>
+      <p>Not sure which one is yours? Take a tiny moment for yourself. We’ll help you find a bag for the way you move through the world.</p>
+      <a class="button" href="#quiz" style="display:inline-block;text-decoration:none">Find my bag <span aria-hidden="true">→</span></a>
+      <p class="note">Three little questions. Your kind of bag.</p>
+    </section>
+
+    <section class="quiz-section wrap" id="quiz" aria-label="Find your bag quiz">
+      <div class="quiz-card">
+        <div id="quiz-content">
+          <div class="quiz-head"><span class="eyebrow">Your bag, your way</span><span class="question-count" id="count">Question 1 of 3</span></div>
+          <div class="progress-track" aria-hidden="true"><div class="progress" id="progress"></div></div>
+          <div id="question-area"></div>
+        </div>
+        <div class="result" id="result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="wrap story-grid">
+        <div class="photo-frame" id="photo-frame">
+          <img src="assets/founders.jpg" alt="RAWAN CEO and co-founder" onload="document.getElementById('photo-frame').classList.add('has-photo')" onerror="this.remove()">
+          <div class="photo-placeholder"><div class="monogram" aria-hidden="true">R</div><p>Add a photo of the CEO and co-founder as <strong>assets/founders.jpg</strong> to make this story yours.</p></div>
+        </div>
+        <div>
+          <span class="founder-label">The people behind RAWAN</span>
+          <h2>More than what you carry.</h2>
+          <p class="story-copy">RAWAN began with a feeling: the things we carry close should say something about who we are. Our CEO and co-founder created this brand to make bags that feel personal—pieces that meet you in your everyday moments and become part of your story.</p>
+          <p class="quote">“We want every woman to feel seen, confident, and a little more herself when she carries RAWAN.”</p>
+          <span class="eyebrow">Made to carry a feeling.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="purpose wrap">
+      <span class="eyebrow">Why RAWAN</span>
+      <blockquote>“A bag holds your things.<br>The right one holds a feeling.”</blockquote>
+      <p>Our purpose is to create an emotional connection—not just a bag you take with you, but one that feels like it belongs with you.</p>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner"><span class="brand">RAWAN</span><span>Find your bag. Carry your feeling.</span></div></footer>
+  <script>
+    const questions = [
+      { title: 'What do you want your bag to feel like?', sub: 'Go with the feeling you want to carry.', answers: [
+        ['Easy & effortless', 'Room for the day, without the fuss.', 'everyday'], ['Bold & expressive', 'A little statement that feels like you.', 'bold'], ['Soft & romantic', 'A thoughtful detail to love every day.', 'romantic'], ['Calm & considered', 'Simple, timeless, and beautifully useful.', 'minimal']
+      ]},
+      { title: 'What does a day in your life look like?', sub: 'There’s no wrong answer—just your rhythm.', answers: [
+        ['On the go', 'I need my essentials close and ready.', 'everyday'], ['A little bit of everything', 'My bag comes along for the whole story.', 'bold'], ['Slow moments', 'I like to take my time and notice details.', 'romantic'], ['Only the essentials', 'Light, focused, and uncomplicated.', 'minimal']
+      ]},
+      { title: 'Pick the detail you’re drawn to.', sub: 'Trust your first instinct.', answers: [
+        ['Practical space', 'A place for all the little things.', 'everyday'], ['A confident shape', 'Something with personality.', 'bold'], ['A graceful finish', 'A touch of softness.', 'romantic'], ['A clean silhouette', 'Quiet beauty that lasts.', 'minimal']
+      ]}
+    ];
+    const outcomes = {
+      everyday: { icon:'☀️', name:'The Everyday Companion', line:'You make the most of every day. Your match is a dependable, easy-to-love bag that keeps your essentials close and goes wherever your day takes you.', feeling:'Comfort, confidence, and room for what matters.' },
+      bold: { icon:'✦', name:'The Statement Maker', line:'You bring your own energy wherever you go. Your match has personality—an expressive companion that makes even an ordinary day feel like your own.', feeling:'Self-expression, courage, and a little joy.' },
+      romantic: { icon:'🌷', name:'The Soft Romantic', line:'You notice the small things and make everyday moments feel special. Your match is thoughtful and graceful, with a feeling you’ll want to carry close.', feeling:'Warmth, tenderness, and a moment for yourself.' },
+      minimal: { icon:'☁️', name:'The Quiet Essential', line:'You know what matters and choose with care. Your match is a timeless, uncomplicated companion that feels natural from the very first day.', feeling:'Clarity, ease, and quiet confidence.' }
+    };
+    let step = 0;
+    const scores = { everyday:0, bold:0, romantic:0, minimal:0 };
+    const area = document.getElementById('question-area');
+    function renderQuestion(){
+      const q = questions[step];
+      document.getElementById('count').textContent = `Question ${step + 1} of ${questions.length}`;
+      document.getElementById('progress').style.width = `${(step / questions.length) * 100}%`;
+      area.innerHTML = `<h2>${q.title}</h2><p class="sub">${q.sub}</p><div class="answers">${q.answers.map((a,i)=>`<button class="answer" type="button" data-style="${a[2]}"><strong>${a[0]}</strong><span>${a[1]}</span></button>`).join('')}</div>`;
+      area.querySelectorAll('.answer').forEach(button=>button.addEventListener('click',()=>{
+        scores[button.dataset.style]++;
+        step++;
+        if(step < questions.length) renderQuestion(); else showResult();
+      }));
+    }
+    function showResult(){
+      const style = Object.keys(scores).reduce((a,b)=>scores[a]>=scores[b]?a:b);
+      const match = outcomes[style];
+      document.getElementById('quiz-content').style.display='none';
+      const result = document.getElementById('result');
+      result.style.display='block';
+      result.innerHTML = `<div class="result-icon" aria-hidden="true">${match.icon}</div><span class="eyebrow">Your RAWAN feeling</span><h2>${match.name}</h2><p>${match.line}</p><p><strong>${match.feeling}</strong></p><button class="button" type="button" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">Meet the people behind RAWAN →</button><button class="restart" type="button" id="restart">Take the quiz again</button>`;
+      document.getElementById('progress').style.width='100%';
+      document.getElementById('restart').addEventListener('click',restart);
+    }
+    function restart(){step=0;Object.keys(scores).forEach(key=>scores[key]=0);document.getElementById('result').style.display='none';document.getElementById('quiz-content').style.display='block';renderQuestion();}
+    renderQuestion();
+  </script>
+</body>
+</html>
